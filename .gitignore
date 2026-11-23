@@ -1,0 +1,27 @@
+# Système
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# PostgreSQL / MongoDB
+*.dump
+*.sql.bak
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Environnements
+.env
+*.env
+node_modules/
+venv/
+__pycache__/
+
+# Fichiers temporaires / volumineux
+*.zip
+*.rar
+captures_temp/
