@@ -126,6 +126,12 @@ erDiagram
     }
 ```
 
+**Diagramme ERD — image haute résolution (§2.7) :**
+
+![Schéma relationnel ERD — Projet 1, §2.7](../captures/P1_schema_relationnel_ERD.png)
+
+Fichier : `../captures/P1_schema_relationnel_ERD.png`.
+
 **Les 5 associations :** un client peut passer plusieurs commandes ; un utilisateur fonctionnel peut gérer plusieurs commandes ; une commande peut comporter plusieurs lignes ; un produit peut apparaître dans plusieurs commandes ; une commande peut recevoir plusieurs paiements.
 
 ### 3. Insertion des données initiales

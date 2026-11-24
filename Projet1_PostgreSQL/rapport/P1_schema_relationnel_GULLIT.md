@@ -64,6 +64,12 @@ erDiagram
     }
 ```
 
+### Version image haute résolution (preuve livrée)
+
+![Schéma relationnel ERD — Projet 1, §2.7](../captures/P1_schema_relationnel_ERD.png)
+
+Fichier : `../captures/P1_schema_relationnel_ERD.png` (6 tables, 5 associations, fond blanc, traits gris foncé).
+
 ### Légende des 5 associations
 
 | # | Association | Cardinalité | Clé étrangère | Explication |
@@ -128,7 +134,7 @@ Les noms de tables et de colonnes du sujet ont été normalisés sans changer le
 
 #### §2.7 Diagramme entité-relationnel
 
-Le diagramme ERD complet (six entités, cinq associations) est présenté en tête de ce document. Il est directement rendable par Mermaid dans tout éditeur Markdown compatible.
+Le diagramme ERD complet (six entités, cinq associations) est présenté en tête de ce document et livré en image haute résolution dans `../captures/P1_schema_relationnel_ERD.png`. Il est directement rendable par Mermaid dans tout éditeur Markdown compatible.
 
 #### §2.8 Remarque de contrôle qualité sur les données du sujet
 
