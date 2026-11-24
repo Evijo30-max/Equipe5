@@ -1,0 +1,18 @@
+=== P2-99 CONTROLES FINAUX - GROUPE 5 ===
+Horodatage : 2026-11-22T18:00:42.767Z
+Base active : universite_tp
+Version du serveur : 8.0.34
+
+--- 1. EXISTENCE DE LA COLLECTION ET COMPTAGE ---
+Collections de universite_tp : []
+Collection "etudiants" : ABSENTE
+Nombre total de documents : 0
+>>> EN ATTENTE : le lot M3 (01_structure.js + insertions) doit encore alimenter la collection.
+>>> Les controles 2 et 3 sont ignores tant que la collection est vide.
+
+--- 4. VERIFICATION DE LA SUPPRESSION CONTROLEE C7/S7 ---
+Criteres : matricule=TEST-C7-S7 OU email=test.suppression@universite.local OU nom=DOSSIER_TEST_SUPPRESSION
+Dossiers de test restants : 0
+RESULTAT : OK - le dossier de test a bien ete supprime (ou n a jamais ete insere).
+
+=== FIN DES CONTROLES P2-99 ===

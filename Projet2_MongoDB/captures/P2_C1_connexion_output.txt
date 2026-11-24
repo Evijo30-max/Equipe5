@@ -1,0 +1,29 @@
+=== P2-C1 TEST DE CONNEXION MONGODB (Groupe 5) ===
+Horodatage: 2026-11-22T17:59:25.858Z
+Version du serveur: 8.0.34
+Point d acc├¿s: mongodb://localhost:27017 (conteneur mongodb-tp)
+Utilisateur authentifie: admin (r├┤le root sur admin)
+--- SHOW DBS ---
+admin
+config
+local
+tp_bases
+--- STATUT D AUTHENTIFICATION ---
+{
+  authInfo: {
+    authenticatedUsers: [
+      {
+        user: 'admin',
+        db: 'admin'
+      }
+    ],
+    authenticatedUserRoles: [
+      {
+        role: 'root',
+        db: 'admin'
+      }
+    ]
+  },
+  ok: 1
+}
+=== FIN DU TEST DE CONNEXION ===

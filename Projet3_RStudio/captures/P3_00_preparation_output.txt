@@ -1,0 +1,141 @@
+=== P3-00 PREPARATION DES DONNEES - GROUPE 2 ===
+Date d'execution : 2026-11-22 18:10:41.580618
+Version de R : R version 4.6.2 (2026-10-29)
+Graine aleatoire : 2026
+
+Fichier importe : /tmp/p3_work/jeu_donnees_clients_telecom.csv
+
+--- S4.2 DIMENSIONS ---
+dim : 120 x 12
+
+--- S4.3 STRUCTURE (str) ---
+'data.frame':	120 obs. of  12 variables:
+ $ ID_Client                     : chr  "CL001" "CL002" "CL003" "CL004" ...
+ $ Age                           : int  29 42 20 32 21 42 43 42 24 28 ...
+ $ Anciennete_mois               : int  24 38 60 31 74 20 51 31 28 35 ...
+ $ Heures_connexion_jour         : num  2.8 2.9 1.1 1.4 2.3 2.9 5.3 3.1 1.4 2.4 ...
+ $ Volume_donnees_Go_mois        : num  22.4 44.1 4.4 16.6 17.5 12.1 43.5 26.9 13.8 31.9 ...
+ $ Depenses_FCFA_mois            : num  10000 17100 18700 10800 9300 15400 19400 16700 7600 15100 ...
+ $ Nb_services                   : int  3 2 3 3 4 1 4 2 2 3 ...
+ $ Nb_reclamations_mois          : num  0 2 0 1 2 1 1 0 0 1 ...
+ $ Ville                         : chr  "Garoua" "Garoua" "Douala" "Yaounde" ...
+ $ Categorie_socioprofessionnelle: chr  "Etudiant" "Fonctionnaire" "Entrepreneur" "Salarie_prive" ...
+ $ Type_abonnement               : chr  "Postpaye" "Postpaye" "Postpaye" "Prepaye" ...
+ $ Satisfaction                  : chr  "Moyenne" "Faible" "Moyenne" "Moyenne" ...
+
+--- S4.4 RESUME STATISTIQUE (summary) ---
+     ID_Client        Age        Anciennete_mois Heures_connexion_jour
+ Length   :120   Min.   :18.00   Min.   : 5.00   Min.   :0.300        
+ N.unique :120   1st Qu.:24.00   1st Qu.:18.75   1st Qu.:2.275        
+ N.blank  :  0   Median :33.00   Median :29.00   Median :3.100        
+ Min.nchar:  5   Mean   :32.91   Mean   :31.52   Mean   :3.296        
+ Max.nchar:  5   3rd Qu.:40.25   3rd Qu.:39.25   3rd Qu.:4.600        
+                 Max.   :57.00   Max.   :81.00   Max.   :7.300        
+                                                                      
+ Volume_donnees_Go_mois Depenses_FCFA_mois  Nb_services    Nb_reclamations_mois
+ Min.   : 1.00          Min.   : 4100      Min.   :1.000   Min.   :0.0000      
+ 1st Qu.:15.55          1st Qu.:10300      1st Qu.:2.000   1st Qu.:0.0000      
+ Median :26.50          Median :14200      Median :3.000   Median :1.0000      
+ Mean   :28.31          Mean   :14144      Mean   :2.542   Mean   :0.9328      
+ 3rd Qu.:38.50          3rd Qu.:17750      3rd Qu.:3.000   3rd Qu.:1.0000      
+ Max.   :73.40          Max.   :25100      Max.   :5.000   Max.   :5.0000      
+ NAs    :2              NAs    :2                          NAs    :1           
+       Ville     Categorie_socioprofessionnelle  Type_abonnement
+ Length   :120   Length   :120                  Length   :120   
+ N.unique :  4   N.unique :  4                  N.unique :  2   
+ N.blank  :  0   N.blank  :  0                  N.blank  :  0   
+ Min.nchar:  6   Min.nchar:  8                  Min.nchar:  7   
+ Max.nchar:  9   Max.nchar: 13                  Max.nchar:  8   
+ NAs      :  1                                                  
+                                                                
+    Satisfaction
+ Length   :120  
+ N.unique :  3  
+ N.blank  :  0  
+ Min.nchar:  6  
+ Max.nchar:  7  
+                
+                
+
+--- S4.4 VALEURS MANQUANTES PAR COLONNE ---
+                     ID_Client                            Age 
+                             0                              0 
+               Anciennete_mois          Heures_connexion_jour 
+                             0                              0 
+        Volume_donnees_Go_mois             Depenses_FCFA_mois 
+                             2                              2 
+                   Nb_services           Nb_reclamations_mois 
+                             0                              1 
+                         Ville Categorie_socioprofessionnelle 
+                             1                              0 
+               Type_abonnement                   Satisfaction 
+                             0                              0 
+Total des valeurs manquantes : 6
+
+--- S4.4 CONTROLE DES DOUBLONS ---
+Nombre de lignes en double : 0
+
+=== QUESTION A1 - VARIABLES QUANTITATIVES ===
+Identifiant exclu : ID_Client
+Variables qualitatives exclues (AFC) : Ville, Categorie_socioprofessionnelle, Type_abonnement, Satisfaction
+Variables quantitatives retenues (ACP / K-means) : Age, Anciennete_mois, Heures_connexion_jour, Volume_donnees_Go_mois, Depenses_FCFA_mois, Nb_services, Nb_reclamations_mois
+Nombre de variables quantitatives : 7
+Verification des colonnes (12 attendues) : TRUE
+
+=== QUESTION A2 - TRAITEMENT DES VALEURS MANQUANTES ===
+
+--- A2.1 ETAT AVANT IMPUTATION (attendu vs observe) ---
+Volume_donnees_Go_mois       attendu=2  observe=2
+Depenses_FCFA_mois           attendu=2  observe=2
+Nb_reclamations_mois         attendu=1  observe=1
+Ville                        attendu=1  observe=1
+Total attendu = 6 | Total observe = 6
+
+--- A2.2 IMPUTATION PAR LA MEDIANE (quantitatives) ---
+Volume_donnees_Go_mois       mediane = 26.5 | NA imputes = 2
+Depenses_FCFA_mois           mediane = 14200 | NA imputes = 2
+Nb_reclamations_mois         mediane = 1 | NA imputes = 1
+Volume_donnees_Go_mois     Depenses_FCFA_mois   Nb_reclamations_mois 
+                  26.5                14200.0                    1.0 
+
+--- A2.3 IMPUTATION PAR LE MODE (Ville) ---
+Modalite la plus frequente : Douala (43 occurrences sur 119)
+NA avant imputation Ville : 1
+NA apres imputation Ville : 0
+
+--- A2.4 CONTROLE FINAL ---
+Dimensions avant : 120 x 12
+Dimensions apres  : 120 x 12
+sum(is.na(donnees_prep)) = 0
+RESULTAT A2 : OK - 0 valeur manquante, 120 clients conserves.
+
+--- A2.5 RECAPITULATIF NA AVANT / APRES ---
+               Variable NA_avant NA_apres Methode
+ Volume_donnees_Go_mois        2        0 Mediane
+     Depenses_FCFA_mois        2        0 Mediane
+   Nb_reclamations_mois        1        0 Mediane
+                  Ville        1        0    Mode
+
+=== MATRICE QUANTITATIVE X_quant ===
+dim(X_quant) : 120 x 7
+     Age Anciennete_mois Heures_connexion_jour Volume_donnees_Go_mois
+[1,]  29              24                   2.8                   22.4
+[2,]  42              38                   2.9                   44.1
+[3,]  20              60                   1.1                    4.4
+[4,]  32              31                   1.4                   16.6
+[5,]  21              74                   2.3                   17.5
+[6,]  42              20                   2.9                   12.1
+     Depenses_FCFA_mois Nb_services Nb_reclamations_mois
+[1,]              10000           3                    0
+[2,]              17100           2                    2
+[3,]              18700           3                    0
+[4,]              10800           3                    1
+[5,]               9300           4                    2
+[6,]              15400           1                    1
+
+--- FICHIERS GENERES ---
+donnees_prep.rds  : 2547 octets
+donnees_prep.csv  : 9401 octets
+X_quant_prep.rds  : 1675 octets
+
+=== FIN DU SCRIPT P3-00 ===

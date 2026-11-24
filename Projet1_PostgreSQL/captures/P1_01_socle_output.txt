@@ -1,0 +1,73 @@
+=== [1/6] Suppression et recreation de la base entreprise_tp ===
+DROP DATABASE
+CREATE DATABASE
+=== [2/6] Connexion a entreprise_tp ===
+You are now connected to database "entreprise_tp" as user "postgres".
+=== [3/6] Creation des 6 tables et de leurs contraintes ===
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+=== [4/6] Chargement des donnees initiales ===
+INSERT 0 5
+INSERT 0 4
+INSERT 0 5
+INSERT 0 5
+INSERT 0 10
+INSERT 0 5
+ setval 
+--------
+      5
+(1 row)
+
+ setval 
+--------
+      4
+(1 row)
+
+ setval 
+--------
+      5
+(1 row)
+
+ setval 
+--------
+      5
+(1 row)
+
+ setval 
+--------
+     10
+(1 row)
+
+ setval 
+--------
+      5
+(1 row)
+
+=== [5/6] Controle du nombre d enregistrements (valeurs attendues) ===
+ ordre |   table_name    | nb_obtenu | nb_attendu 
+-------+-----------------+-----------+------------
+     1 | clients         |         5 |          5
+     2 | utilisateurs    |         4 |          4
+     3 | produits        |         5 |          5
+     4 | commandes       |         5 |          5
+     5 | lignes_commande |        10 |         10
+     6 | paiements       |         5 |          5
+(6 rows)
+
+=== [6/6] Liste des relations (meta-commande dt) ===
+               List of tables
+ Schema |      Name       | Type  |  Owner   
+--------+-----------------+-------+----------
+ public | clients         | table | postgres
+ public | commandes       | table | postgres
+ public | lignes_commande | table | postgres
+ public | paiements       | table | postgres
+ public | produits        | table | postgres
+ public | utilisateurs    | table | postgres
+(6 rows)
+
+=== FIN DU SCRIPT SOCLE P1_01_socle_GULLIT.sql ===
