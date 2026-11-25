@@ -1,0 +1,117 @@
+[
+  {
+    "matricule": "ETU-2026-0001",
+    "identite": {
+      "nom": "MBARGA",
+      "prenoms": "Sylvie",
+      "date_naissance": "2003-05-12",
+      "sexe": "F"
+    },
+    "formation": {
+      "filiere": "Informatique",
+      "niveau": "L3",
+      "annee": "2025-2026",
+      "ue": ["BDD NoSQL", "IA", "Reseaux"]
+    },
+    "coordonnees": {
+      "email": "sylvie.mbarga@etu.univ.cm",
+      "telephone": "+237 690 11 22 33",
+      "adresse": { "ville": "Douala", "quartier": "Akwa" }
+    },
+    "certifications": [
+      { "nom": "Certification CCNA", "date_obtention": "2025-07-01" }
+    ],
+    "stages": [
+      { "entreprise": "CamerDigital", "periode": "2024-2025", "statut": "termine" }
+    ],
+    "pieces_justificatives": [
+      { "type": "bulletin_semestre_1", "date_depot": "2025-10-15" }
+    ]
+  },
+  {
+    "matricule": "ETU-2026-0002",
+    "identite": {
+      "nom": "NKODO",
+      "prenoms": "Jean",
+      "date_naissance": "2002-11-03",
+      "sexe": "M"
+    },
+    "formation": {
+      "filiere": "Genie civil",
+      "niveau": "L2",
+      "annee": "2025-2026",
+      "ue": ["Mecanique des sols", "Topographie"]
+    },
+    "coordonnees": {
+      "email": "jean.nkodo@etu.univ.cm",
+      "telephone": "+237 691 22 33 44",
+      "adresse": { "ville": "Yaounde", "quartier": "Mendong" }
+    }
+  },
+  {
+    "matricule": "ETU-2026-0003",
+    "identite": {
+      "nom": "ETOGA",
+      "prenoms": "Marie",
+      "date_naissance": "2001-02-18",
+      "sexe": "F"
+    },
+    "formation": {
+      "filiere": "Informatique",
+      "niveau": "M1",
+      "annee": "2025-2026",
+      "ue": ["BDD NoSQL", "Data science", "Anglais technique"]
+    },
+    "coordonnees": {
+      "email": "marie.etoga@etu.univ.cm",
+      "telephone": "+237 692 33 44 55",
+      "adresse": { "ville": "Douala", "quartier": "Bonapriso" }
+    },
+    "certifications": [
+      { "nom": "MongoDB Associate Developer", "date_obtention": "2025-09-20" }
+    ]
+  },
+  {
+    "matricule": "ETU-2026-0004",
+    "identite": {
+      "nom": "MBEKI",
+      "prenoms": "Paul",
+      "date_naissance": "2004-07-30",
+      "sexe": "M"
+    },
+    "formation": {
+      "filiere": "Economie",
+      "niveau": "L1",
+      "annee": "2025-2026",
+      "ue": ["Microeconomie", "Comptabilite"]
+    },
+    "coordonnees": {
+      "email": "paul.mbeki@etu.univ.cm",
+      "telephone": "+237 693 44 55 66",
+      "adresse": { "ville": "Bafoussam", "quartier": "Centre" }
+    }
+  },
+  {
+    "matricule": "ETU-2026-0005",
+    "identite": {
+      "nom": "NGUEMA",
+      "prenoms": "Carine",
+      "date_naissance": "2003-01-25",
+      "sexe": "F"
+    },
+    "formation": {
+      "filiere": "Informatique",
+      "niveau": "L3",
+      "annee": "2025-2026",
+      "ue": ["BDD NoSQL", "Developpement web"]
+    },
+    "coordonnees": {
+      "email": "carine.nguema@etu.univ.cm",
+      "telephone": "+237 694 55 66 77",
+      "adresse": { "ville": "Yaounde", "quartier": "Bastos" }
+    },
+    "stages": [
+      { "entreprise": "Orange Cameroun", "periode": "2025-2026", "statut": "en_cours" }
+    ]
+  }
+]
